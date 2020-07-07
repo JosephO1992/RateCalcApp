@@ -1,9 +1,8 @@
 /* Theme styling */
 
 body {
-    width: 40%;
+    width: 60%;
     margin: auto;
-    text-align: right;
     font-family: 'Open Sans', sans-serif;   
     font-size: 1.5rem; 
 }
@@ -13,6 +12,16 @@ body {
 h1 {
     font-size: 4rem;
     font-weight: 300;
+    text-align: center;
+}
+
+label {
+    text-align: left;
+}
+
+form {
+    width: 550px;
+    margin: auto;
 }
 
 /* Layout styling */
@@ -31,5 +40,14 @@ h1 {
     width: 125px;
     height: 25px;
     font-size: 1.5rem;
-    align-items: right;
+    float: right;
 }
+
+.calculate {
+    width: 125px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 1.25rem;
+}
+
+
