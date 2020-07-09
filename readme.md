@@ -1,3 +1,3 @@
 # Creating a rate calculator app 
 
-This will be able to perform some simple map within a form
+This will be able to perform some simple math within a form
