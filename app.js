@@ -4,6 +4,8 @@ const inputMargin = document.querySelector('input.margin');
 const calculateButton = document.querySelector('button.calculate');
 const form = document.querySelector('form');
 const outPut = document.querySelector('.answer');
+const incSuper = document.querySelector('.inc');
+const exclSuper = document.querySelector('.excl');
 
 function convertToNum(inputString) {
     let strV = inputString.value;
@@ -17,20 +19,23 @@ function convertToNum(inputString) {
     return numPercent;
  };
 
- function totalDayRate(r, p, m) {
-     let totalRate = (r * p) + m;
-     return totalRate;
+ function totalDayRate(rate, percentage, margin) {
+        console.log("hello");
+        let totalRate = (rate * percentage) + margin;
+        return totalRate;
  }
-
+ 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-   let numInputRate = convertToNum(inputRate);
-   let numInputOnCosts = convertToNum(inputOnCosts);
-   let numInputMargin = convertToNum(inputMargin);
-   let percentOncosts = convertToPercentage(numInputOnCosts);
-   let finalDayRate = totalDayRate(numInputRate, percentOncosts, numInputMargin);
-   outPut.textContent = finalDayRate;
-   
+    let numInputRate = convertToNum(inputRate);
+    let numInputOnCosts = convertToNum(inputOnCosts);
+    let numInputMargin = convertToNum(inputMargin);
+    let percentOncosts = convertToPercentage(numInputOnCosts);
+    let finalDayRate = totalDayRate(numInputRate, percentOncosts, numInputMargin);
+    outPut.textContent = finalDayRate;
+    if(incSuper.checked != true) {
+        console.log("working");
+    }
 });
 
 

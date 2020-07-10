@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contractor Rate Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
    
       <header class='main-header'>
-         <h1>Rate Calculator App</h1>
+         <h1>Contractor Rate Calculator</h1>
       </header>
  
       <form>
          <div class="main-content">
-            <label for="contractRate" class="secondary-content">Contractor Rate($) excl super:</label>
+            <label for="contractRate" class="secondary-content">Contractor Rate ($)</label>
             <input type="number" name="contractRate" class="rate secondary-content inputBox"> 
-
+            <div>
+               <label class="secondary-content inc">inc</label><input type="checkbox"><label class="secondary-content excl">excl</label><input type="checkbox"></div>
+            
          </div>
-        
          <div class="main-content">
-            <label for="onCosts">Oncosts(%):</label>
+            <label for="onCosts" class="secondary-content">Oncosts (%):</label>
             <input type="number" name="onCosts" class="onCosts inputBox">
          </div>
          <div class="main-content">
-            <label for="margin">Margin($):</label>
+            <label for="margin" class="secondary-content">Margin ($):</label>
             <input type="number" name="margin" class="margin inputBox">
          </div>
          <div class="main-content">
             <button class="calculate">Calculate</button>
-            <span></span>
+            <span class="answer"></span>
          </div>
       </form>      
 <script src="app.js"></script>
