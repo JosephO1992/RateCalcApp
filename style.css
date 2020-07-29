@@ -26,9 +26,16 @@ label {
     text-align: left;
 }
 
-form {
-    width: 550px;
-    margin: auto;
+
+
+.wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;   
+    flex-wrap: wrap; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -48,9 +55,13 @@ form {
 /* linear-gradient(#201e51, transparent 100%),  */
 
 .main-content {
-    margin-top: 20px;
+    
     color: #222222;
-    padding: 20px 0px;
+    width: 50%;
+    flex-grow: 1;
+    margin-top: 3rem;
+ 
+
 }
 
 
@@ -73,8 +84,6 @@ form {
     font-size: 1.25rem;
 }
 
-.answer {
-    float: right;
-}
+
 
 
