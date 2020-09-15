@@ -26,6 +26,15 @@ label {
     text-align: left;
 }
 
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #15968b;
+    height: 50px;
+    color: white;
+    
+}
+
 
 
 .wrapper {
