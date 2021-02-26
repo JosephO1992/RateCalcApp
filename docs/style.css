@@ -1,90 +1,119 @@
+/* Variables */
+
+:root {
+	--headerFont: "Ubuntu", sans-serif;
+	--mainFont: "Oxygen", sans-serif;
+}
+
+/* Fonts */
+/* 
+font-family: 'Oxygen', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
 /* Theme styling */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  margin: 0;
-  font-size: 1.5rem;
-  background-color: #ffffff;
+	margin: 0;
+	font-size: 1.5rem;
+	background-color: #ffffff;
 }
 
 /* Element styling */
 
 h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  color: #f5f5f5;
-  font-family: "Comfortaa", cursive;
+	font-size: 3rem;
+	font-weight: 300;
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 label {
-  text-align: left;
+	text-align: left;
 }
 
 footer {
-  text-align: center;
-  font-size: 0.8rem;
-  background-color: #15968b;
-  height: 50px;
-  color: white;
+	text-align: center;
+	font-size: 0.8rem;
+	background-color: #15968b;
+	height: 50px;
+	color: white;
 }
 
 form {
-  margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .wrapper {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-family: var(--mainFont);
 }
 
 /* Layout styling */
 
 .main-header {
-  padding-top: 170px;
-  height: 450px;
-  background: linear-gradient(
-      rgba(20, 20, 20, 0.5),
-      /* Adding the overlay with gradient, by putting the same color in twice, makes the whole background go 1 color */
-        rgba(20, 20, 20, 0.5)
-    ),
-    url(img/background-image.jpg) no-repeat center / cover;
+	height: 25vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--headerFont);
 }
-/* linear-gradient(#201e51, transparent 100%),  */
+
+.main-header p {
+	font-size: 1.5rem;
+}
 
 .main-content {
-  color: #222222;
-  width: 50%;
-  flex-grow: 1;
-  margin-top: 3rem;
-}
-
-.secondary-content {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+	color: #222222;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 3rem;
 }
 
 .inputBox {
-  width: 200px;
-  height: 40px;
-  font-size: 1.5rem;
-  float: right;
-  border: 1px solid #555555;
+	width: 200px;
+	height: 40px;
+	font-size: 1rem;
+	float: right;
+	border: 1px solid #555555;
+	padding: 5px;
+	border-radius: 20px;
+	outline: none;
 }
 
 .calculate {
-  width: 125px;
-  height: 50px;
-  border-radius: 15px;
-  font-size: 1.25rem;
+	width: 125px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 1.25rem;
+	font-family: "Ubuntu", sans-serif;
+	background-color: white;
+}
+
+.calculate:hover {
+	color: white;
+	background-color: #222222;
+	cursor: pointer;
+}
+
+::placeholder {
+	font-size: 1rem;
+	text-align: left;
+	font-family: var(--mainFont);
+	padding-left: 5px;
 }
