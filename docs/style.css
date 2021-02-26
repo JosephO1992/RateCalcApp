@@ -52,10 +52,9 @@ form {
 
 .wrapper {
 	display: flex;
-	width: 80%;
-	margin: auto;
-	flex-wrap: wrap;
 	flex-direction: column;
+	align-items: center;
+
 	justify-content: space-around;
 	align-items: center;
 	font-family: var(--mainFont);
@@ -94,6 +93,11 @@ form {
 	padding: 5px;
 	border-radius: 20px;
 	outline: none;
+	caret-color: transparent;
+}
+
+.inputBox:focus {
+	border: 2px solid black;
 }
 
 .calculate {
@@ -116,4 +120,10 @@ form {
 	text-align: left;
 	font-family: var(--mainFont);
 	padding-left: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
